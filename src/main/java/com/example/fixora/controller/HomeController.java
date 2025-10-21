@@ -24,4 +24,14 @@ public class HomeController {
 
         return "index"; // ✅ matches index.html
     }
+
+    @GetMapping("/login")
+    public String login() {
+        return "login";
+    }
+
+    @GetMapping("/signup")
+    public String signup(Model model) {
+        return "signup";
+    }
 }
